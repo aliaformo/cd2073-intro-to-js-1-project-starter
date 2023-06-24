@@ -74,7 +74,7 @@ document.querySelector('.products').addEventListener('click', (e) => {
 document.querySelector('.cart').addEventListener('click', (e) => {
     // Helper nested higher order function to use below
     // Must be nested to have access to the event target
-    // Takes in a cart function as an agrument
+    // Takes in a cart function as an argument
     function runCartFunction(fn) {
         let productId = e.target.parentNode.getAttribute('data-productId');
         productId *= 1;
